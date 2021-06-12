@@ -23,7 +23,7 @@ const cancelTicket = (pnr, refundAmount) => {
 
 //Reducer
 const updateReservationList = (reservationList = [], action) => {
-    let id = 0;
+    let id = 1;
     let arrLength = reservationList.length;
     if(arrLength !== 0) {
         id = reservationList[arrLength - 1].pnr + 1;
