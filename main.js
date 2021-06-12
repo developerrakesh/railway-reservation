@@ -50,7 +50,7 @@ const allReducers = combineReducers({
     Accounts: updateAccounts
 });
 //Store
-const ticketList = createStore(allReducers);
+const ticketList = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 //Dispatch
 ticketList.dispatch(bookTicket('Rakesh', 700));
 ticketList.dispatch(bookTicket('Ram', 300));
