@@ -46,8 +46,8 @@ const updateAccounts = (balance = 0, action) => {
 }
 
 const allReducers = combineReducers({
-    updateReservationList,
-    updateAccounts
+    ReservationList: updateReservationList,
+    Accounts: updateAccounts
 });
 //Store
 const ticketList = createStore(allReducers);
